@@ -2,8 +2,8 @@ import psycopg2
 import os
 import logging
 import traceback
-from variables import *
-from csv_writers import CSVWriters
+from .variables import *
+from .csv_writers import CSVWriters
 from psycopg2.errors import CharacterNotInRepertoire
 
 

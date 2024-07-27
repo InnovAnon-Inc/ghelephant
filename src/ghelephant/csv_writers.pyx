@@ -1,5 +1,5 @@
 import csv
-from variables import data_path
+from .variables import data_path
 
 
 class CSVWriters:

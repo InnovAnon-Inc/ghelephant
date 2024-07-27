@@ -2,7 +2,7 @@ import orjson
 import logging
 import traceback
 import msgspec
-from json_objects import *
+from .json_objects import *
 
 
 class JSONToCSVConverter:

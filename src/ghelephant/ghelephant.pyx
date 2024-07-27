@@ -3,9 +3,9 @@
 import logging
 import threading
 import argparse
-from manager import Manager
-from database_link import DatabaseLink
-from processing import Processing
+from .manager import Manager
+from .database_link import DatabaseLink
+from .processing import Processing
 from typing import Optional
 
 class InvalidUsageException(Exception):

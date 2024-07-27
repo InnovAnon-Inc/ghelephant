@@ -2,11 +2,11 @@ import requests
 import os
 import logging
 import datetime
-from variables import data_path
+from .variables import data_path
 from queue import Queue  
-from json_to_csv_converter import JSONToCSVConverter
-from csv_writers import CSVWriters
-from database_link import DatabaseLink
+from .json_to_csv_converter import JSONToCSVConverter
+from .csv_writers import CSVWriters
+from .database_link import DatabaseLink
 
 
 class Manager:
