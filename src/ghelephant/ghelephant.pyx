@@ -3,10 +3,10 @@
 import logging
 import threading
 import argparse
+from typing import Optional
 from .manager import Manager
 from .database_link import DatabaseLink
 from .processing import Processing
-from typing import Optional
 
 class InvalidUsageException(Exception):
     """ user error """
@@ -61,7 +61,7 @@ def _main(
     else:
         raise InvalidUsageException()
 
-def main():
+def main()->None:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--start-date', type=str, required=False, help='Start date in format YYYY-MM-DD.')
