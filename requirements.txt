@@ -1,9 +1,0 @@
-requests
-psycopg2
-orjson
-msgspec
-pandas
-tqdm
-pycountry
-geopy
-

@@ -35,43 +35,59 @@ class JSONToCSVConverter:
                 self.added_ids.add(generic_event.id)
 
             try:
-                match generic_event.type:
-                    case 'PushEvent':
+                #match generic_event.type:
+                    #case 'PushEvent':
+                    if (generic_event.type == 'PushEvent'):
                         record = msgspec.json.decode(line, type=PushEvent)
                         if record.payload.push_id in self.added_pushes:
                             continue
                         else:
                             self.added_pushes.add(record.payload.push_id)
                         self.write_push_event(record, generic_event)
-                    case 'CommitCommentEvent':
+                    #case 'CommitCommentEvent':
+                    elif (generic_event.type == 'CommitCommentEvent'):
                         self.write_commit_comment_event(line, generic_event)
-                    case 'WatchEvent':
+                    #case 'WatchEvent':
+                    elif (generic_event.type == 'WatchEvent'):
                         self.write_generic_event(generic_event)
-                    case 'ReleaseEvent':
+                    #case 'ReleaseEvent':
+                    elif (generic_event.type == 'ReleaseEvent'):
                         self.write_release_event(line, generic_event)
-                    case 'DeleteEvent':
+                    #case 'DeleteEvent':
+                    elif (generic_event.type == 'DeleteEvent'):
                         self.write_delete_event(line, generic_event)
-                    case 'GollumEvent':
+                    #case 'GollumEvent':
+                    elif (generic_event.type == 'GollumEvent'):
                         self.write_gollum_event(line, generic_event)
-                    case 'PublicEvent':
+                    #case 'PublicEvent':
+                    elif (generic_event.type == 'PublicEvent'):
                         self.write_generic_event(generic_event)
-                    case 'MemberEvent':
+                    #case 'MemberEvent':
+                    elif (generic_event.type == 'MemberEvent'):
                         self.write_member_event(line, generic_event)
-                    case 'ForkEvent':
+                    #case 'ForkEvent':
+                    elif (generic_event.type == 'ForkEvent'):
                         self.write_fork_event(line, generic_event)
-                    case 'CreateEvent':
+                    #case 'CreateEvent':
+                    elif (generic_event.type == 'CreateEvent'):
                         self.write_create_event(line, generic_event)
-                    case 'IssuesEvent':
+                    #case 'IssuesEvent':
+                    elif (generic_event.type == 'IssuesEvent'):
                         self.write_issues_event(line, generic_event)
-                    case 'IssueCommentEvent':
+                    #case 'IssueCommentEvent':
+                    elif (generic_event.type == 'IssueCommentEvent'):
                         self.write_issue_comment_event(line, generic_event)
-                    case 'PullRequestEvent':
+                    #case 'PullRequestEvent':
+                    elif (generic_event.type == 'PullRequestEvent'):
                         self.write_pull_request_event(line, generic_event)
-                    case 'PullRequestReviewEvent':
+                    #case 'PullRequestReviewEvent':
+                    elif (generic_event.type == 'PullRequestReviewEvent'):
                         self.write_pull_request_review_event(line, generic_event)
-                    case 'PullRequestReviewCommentEvent':
+                    #case 'PullRequestReviewCommentEvent':
+                    elif (generic_event.type == 'PullRequestReviewCommentEvent'):
                         self.write_pull_request_review_comment_event(line, generic_event)
-                    case _:
+                    #case _:
+                    else:
                         logging.error(f'Unknown event type: {generic_event.type}')
             except Exception:
                 logging.error(f'Error writing line: {line}')

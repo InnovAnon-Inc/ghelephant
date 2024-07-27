@@ -1,0 +1,53 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=64",
+  "toml",
+  "wheel",
+  "Cython",
+  #"iasimplesetup @ file:///home/lmaddox/innovanon.git/simplesetup.d",
+]
+
+[project]
+version = '0.0.0'
+name = "ghelephant"
+dependencies = [
+  "fastapi",
+  "geopy",
+  "msgspec",
+  "orjson",
+  "pandas",
+  "psycopg2",
+  "pycountry",
+  "requests",
+  #"rich",
+  "structlog",
+  "tqdm",
+  "uvicorn",
+]
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Innovations Anonymous", email = "InnovAnon-Inc@gmx.com"},
+]
+[project.optional-dependencies]
+test = [
+]
+rel = [
+  "twine",
+]
+
+#[[package]]
+#name = "torch"
+#version = "2.3.1"
+#source = "file:///./vendor/torch-2.3.1+cpu.cxx11.abi-cp311-cp311-linux_x86_64.whl"
+#
+#[[package]]
+#name = "torchaudio"
+#version = "2.3.1"
+#source = "file:///./vendor/torchaudio-2.3.1+cpu-cp311-cp311-linux_x86_64.whl"
+#
+#[[package]]
+#name = "torchvision"
+#version = "0.18.1"
+#source = "fie:///./vendor/torchvision-0.18.1+cpu-cp311-cp311-linux_x86_64.whl"
