@@ -3859,7 +3859,7 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/csv_writers.pyx":1
  * import csv             # <<<<<<<<<<<<<<
- * from variables import data_path
+ * from .variables import data_path
  * 
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_csv_2, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -3869,7 +3869,7 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/csv_writers.pyx":2
  * import csv
- * from variables import data_path             # <<<<<<<<<<<<<<
+ * from .variables import data_path             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -3878,7 +3878,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_data_path);
   __Pyx_GIVEREF(__pyx_n_s_data_path);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_data_path)) __PYX_ERR(0, 2, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_variables, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_variables, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_3, __pyx_n_s_data_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
@@ -3993,7 +3993,7 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/csv_writers.pyx":1
  * import csv             # <<<<<<<<<<<<<<
- * from variables import data_path
+ * from .variables import data_path
  * 
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)

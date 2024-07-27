@@ -8100,7 +8100,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import logging             # <<<<<<<<<<<<<<
  * import datetime
- * from variables import data_path
+ * from .variables import data_path
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_logging, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8111,7 +8111,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import logging
  * import datetime             # <<<<<<<<<<<<<<
- * from variables import data_path
+ * from .variables import data_path
  * from queue import Queue
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_datetime, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -8122,16 +8122,16 @@ if (!__Pyx_RefNanny) {
   /* "ghelephant/manager.pyx":5
  * import logging
  * import datetime
- * from variables import data_path             # <<<<<<<<<<<<<<
+ * from .variables import data_path             # <<<<<<<<<<<<<<
  * from queue import Queue
- * from json_to_csv_converter import JSONToCSVConverter
+ * from .json_to_csv_converter import JSONToCSVConverter
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_data_path);
   __Pyx_GIVEREF(__pyx_n_s_data_path);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_data_path)) __PYX_ERR(0, 5, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_variables, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_variables, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_3, __pyx_n_s_data_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -8142,10 +8142,10 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/manager.pyx":6
  * import datetime
- * from variables import data_path
+ * from .variables import data_path
  * from queue import Queue             # <<<<<<<<<<<<<<
- * from json_to_csv_converter import JSONToCSVConverter
- * from csv_writers import CSVWriters
+ * from .json_to_csv_converter import JSONToCSVConverter
+ * from .csv_writers import CSVWriters
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8162,18 +8162,18 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "ghelephant/manager.pyx":7
- * from variables import data_path
+ * from .variables import data_path
  * from queue import Queue
- * from json_to_csv_converter import JSONToCSVConverter             # <<<<<<<<<<<<<<
- * from csv_writers import CSVWriters
- * from database_link import DatabaseLink
+ * from .json_to_csv_converter import JSONToCSVConverter             # <<<<<<<<<<<<<<
+ * from .csv_writers import CSVWriters
+ * from .database_link import DatabaseLink
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_JSONToCSVConverter);
   __Pyx_GIVEREF(__pyx_n_s_JSONToCSVConverter);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_JSONToCSVConverter)) __PYX_ERR(0, 7, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_json_to_csv_converter, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_json_to_csv_converter, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_3, __pyx_n_s_JSONToCSVConverter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -8184,9 +8184,9 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/manager.pyx":8
  * from queue import Queue
- * from json_to_csv_converter import JSONToCSVConverter
- * from csv_writers import CSVWriters             # <<<<<<<<<<<<<<
- * from database_link import DatabaseLink
+ * from .json_to_csv_converter import JSONToCSVConverter
+ * from .csv_writers import CSVWriters             # <<<<<<<<<<<<<<
+ * from .database_link import DatabaseLink
  * 
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -8194,7 +8194,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_CSVWriters);
   __Pyx_GIVEREF(__pyx_n_s_CSVWriters);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_CSVWriters)) __PYX_ERR(0, 8, __pyx_L1_error);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_csv_writers, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_csv_writers, __pyx_t_3, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_CSVWriters); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -8204,9 +8204,9 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "ghelephant/manager.pyx":9
- * from json_to_csv_converter import JSONToCSVConverter
- * from csv_writers import CSVWriters
- * from database_link import DatabaseLink             # <<<<<<<<<<<<<<
+ * from .json_to_csv_converter import JSONToCSVConverter
+ * from .csv_writers import CSVWriters
+ * from .database_link import DatabaseLink             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -8215,7 +8215,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_DatabaseLink);
   __Pyx_GIVEREF(__pyx_n_s_DatabaseLink);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_DatabaseLink)) __PYX_ERR(0, 9, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_database_link, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_database_link, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_3, __pyx_n_s_DatabaseLink); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)

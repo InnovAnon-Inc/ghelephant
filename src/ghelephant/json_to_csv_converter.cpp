@@ -16951,7 +16951,7 @@ if (!__Pyx_RefNanny) {
  * import logging
  * import traceback             # <<<<<<<<<<<<<<
  * import msgspec
- * from json_objects import *
+ * from .json_objects import *
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_traceback, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -16962,7 +16962,7 @@ if (!__Pyx_RefNanny) {
  * import logging
  * import traceback
  * import msgspec             # <<<<<<<<<<<<<<
- * from json_objects import *
+ * from .json_objects import *
  * 
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_msgspec, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -16973,7 +16973,7 @@ if (!__Pyx_RefNanny) {
   /* "ghelephant/json_to_csv_converter.pyx":5
  * import traceback
  * import msgspec
- * from json_objects import *             # <<<<<<<<<<<<<<
+ * from .json_objects import *             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -16982,7 +16982,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s__4);
   __Pyx_GIVEREF(__pyx_n_s__4);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s__4)) __PYX_ERR(0, 5, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_json_objects, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_json_objects, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_import_star(__pyx_t_3) < 0) __PYX_ERR(0, 5, __pyx_L1_error);

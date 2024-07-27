@@ -6142,7 +6142,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import logging             # <<<<<<<<<<<<<<
  * import traceback
- * from variables import *
+ * from .variables import *
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_logging, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6153,8 +6153,8 @@ if (!__Pyx_RefNanny) {
  * import os
  * import logging
  * import traceback             # <<<<<<<<<<<<<<
- * from variables import *
- * from csv_writers import CSVWriters
+ * from .variables import *
+ * from .csv_writers import CSVWriters
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_traceback, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6164,8 +6164,8 @@ if (!__Pyx_RefNanny) {
   /* "ghelephant/database_link.pyx":5
  * import logging
  * import traceback
- * from variables import *             # <<<<<<<<<<<<<<
- * from csv_writers import CSVWriters
+ * from .variables import *             # <<<<<<<<<<<<<<
+ * from .csv_writers import CSVWriters
  * from psycopg2.errors import CharacterNotInRepertoire
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -6173,7 +6173,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s__6);
   __Pyx_GIVEREF(__pyx_n_s__6);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s__6)) __PYX_ERR(0, 5, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_variables, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_variables, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_import_star(__pyx_t_3) < 0) __PYX_ERR(0, 5, __pyx_L1_error);
@@ -6181,8 +6181,8 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/database_link.pyx":6
  * import traceback
- * from variables import *
- * from csv_writers import CSVWriters             # <<<<<<<<<<<<<<
+ * from .variables import *
+ * from .csv_writers import CSVWriters             # <<<<<<<<<<<<<<
  * from psycopg2.errors import CharacterNotInRepertoire
  * 
  */
@@ -6191,7 +6191,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_CSVWriters);
   __Pyx_GIVEREF(__pyx_n_s_CSVWriters);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_CSVWriters)) __PYX_ERR(0, 6, __pyx_L1_error);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_csv_writers, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_csv_writers, __pyx_t_3, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_CSVWriters); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -6201,8 +6201,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "ghelephant/database_link.pyx":7
- * from variables import *
- * from csv_writers import CSVWriters
+ * from .variables import *
+ * from .csv_writers import CSVWriters
  * from psycopg2.errors import CharacterNotInRepertoire             # <<<<<<<<<<<<<<
  * 
  * 

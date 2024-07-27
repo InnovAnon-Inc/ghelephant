@@ -5673,7 +5673,7 @@ if (!__Pyx_RefNanny) {
  * import logging
  * import threading             # <<<<<<<<<<<<<<
  * import argparse
- * from manager import Manager
+ * from .manager import Manager
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_threading, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5684,8 +5684,8 @@ if (!__Pyx_RefNanny) {
  * import logging
  * import threading
  * import argparse             # <<<<<<<<<<<<<<
- * from manager import Manager
- * from database_link import DatabaseLink
+ * from .manager import Manager
+ * from .database_link import DatabaseLink
  */
   __pyx_t_2 = __Pyx_ImportDottedModule(__pyx_n_s_argparse, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5695,16 +5695,16 @@ if (!__Pyx_RefNanny) {
   /* "ghelephant/ghelephant.pyx":6
  * import threading
  * import argparse
- * from manager import Manager             # <<<<<<<<<<<<<<
- * from database_link import DatabaseLink
- * from processing import Processing
+ * from .manager import Manager             # <<<<<<<<<<<<<<
+ * from .database_link import DatabaseLink
+ * from .processing import Processing
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_Manager);
   __Pyx_GIVEREF(__pyx_n_s_Manager);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_Manager)) __PYX_ERR(0, 6, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_manager, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_manager, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_3, __pyx_n_s_Manager); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -5715,9 +5715,9 @@ if (!__Pyx_RefNanny) {
 
   /* "ghelephant/ghelephant.pyx":7
  * import argparse
- * from manager import Manager
- * from database_link import DatabaseLink             # <<<<<<<<<<<<<<
- * from processing import Processing
+ * from .manager import Manager
+ * from .database_link import DatabaseLink             # <<<<<<<<<<<<<<
+ * from .processing import Processing
  * from typing import Optional
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -5725,7 +5725,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_DatabaseLink);
   __Pyx_GIVEREF(__pyx_n_s_DatabaseLink);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_DatabaseLink)) __PYX_ERR(0, 7, __pyx_L1_error);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_database_link, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_database_link, __pyx_t_3, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_DatabaseLink); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -5735,9 +5735,9 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "ghelephant/ghelephant.pyx":8
- * from manager import Manager
- * from database_link import DatabaseLink
- * from processing import Processing             # <<<<<<<<<<<<<<
+ * from .manager import Manager
+ * from .database_link import DatabaseLink
+ * from .processing import Processing             # <<<<<<<<<<<<<<
  * from typing import Optional
  * 
  */
@@ -5746,7 +5746,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_Processing);
   __Pyx_GIVEREF(__pyx_n_s_Processing);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_Processing)) __PYX_ERR(0, 8, __pyx_L1_error);
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_processing, __pyx_t_2, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_processing, __pyx_t_2, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_3, __pyx_n_s_Processing); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -5756,8 +5756,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "ghelephant/ghelephant.pyx":9
- * from database_link import DatabaseLink
- * from processing import Processing
+ * from .database_link import DatabaseLink
+ * from .processing import Processing
  * from typing import Optional             # <<<<<<<<<<<<<<
  * 
  * class InvalidUsageException(Exception):
